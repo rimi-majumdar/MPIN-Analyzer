@@ -1,5 +1,3 @@
-# MPIN-Analyzer
-
 # 🔐 MPIN Strength Analyzer
 
 [![Streamlit App](https://img.shields.io/badge/🚀%20Live%20Demo-Streamlit-brightgreen?logo=streamlit)](https://mpin-analyzer-3.onrender.com)  
