@@ -44,11 +44,26 @@ if st.button("Analyze"):
             st.warning(f"Weak reasons: {reasons}")
         else:
             st.success("No weak reasons found. Looks strong ✅")
+with st.expander("ℹ️ How this analyzer works"):
+    st.markdown("""
+    The MPIN Strength Analyzer evaluates your PIN using these rules:
 
-with st.expander("About the checks / assignment"):
-    st.write("""
-- Part A: 4-digit commonly used check.
-- Part B: Add demographics and output **WEAK/STRONG**.
-- Part C: If **WEAK**, return reasons from the allowed set only.
-- Part D: Support 6-digit PINs as well.
+    1. **Commonly Used Check (Part A & D)**  
+       - If your PIN is in a list of frequently used 4-digit or 6-digit PINs, it's flagged as **WEAK**.
+
+    2. **Demographics Check (Part B)**  
+       - If your PIN matches obvious patterns from your **DOB**, **Spouse DOB**, or **Anniversary**  
+         (like `ddmm`, `mmdd`, `yymm`, or `ddmmyy`), it is flagged as **WEAK**.
+
+    3. **Reasons (Part C)**  
+       - If the PIN is weak, the app shows **why**:  
+         - `COMMONLY_USED`  
+         - `DEMOGRAPHIC_DOB_SELF`  
+         - `DEMOGRAPHIC_DOB_SPOUSE`  
+         - `DEMOGRAPHIC_ANNIVERSARY`
+
+    4. **Strength Output**  
+       - If no rules are triggered → **STRONG**  
+       - If one or more rules are triggered → **WEAK**
     """)
+
