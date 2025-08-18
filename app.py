@@ -48,14 +48,14 @@ with st.expander("ℹ️ How this analyzer works"):
     st.markdown("""
     The MPIN Strength Analyzer evaluates your PIN using these rules:
 
-    1. **Commonly Used Check (Part A & D)**  
+    1. **Commonly Used Check**  
        - If your PIN is in a list of frequently used 4-digit or 6-digit PINs, it's flagged as **WEAK**.
 
-    2. **Demographics Check (Part B)**  
+    2. **Demographics Check**  
        - If your PIN matches obvious patterns from your **DOB**, **Spouse DOB**, or **Anniversary**  
          (like `ddmm`, `mmdd`, `yymm`, or `ddmmyy`), it is flagged as **WEAK**.
 
-    3. **Reasons (Part C)**  
+    3. **Reasons **  
        - If the PIN is weak, the app shows **why**:  
          - `COMMONLY_USED`  
          - `DEMOGRAPHIC_DOB_SELF`  
