@@ -65,63 +65,54 @@ mpin-analyzer/
 ├── tests/
 │   └── test_mpin.py     # 20+ test cases
 └── README.md
+```
+
 🚀 Getting Started
 🔹 Run Locally
-bash
-Copy
-Edit
-# Clone repo
+## How to Run Locally
+
+```bash
 git clone https://github.com/<your-username>/mpin-analyzer.git
 cd mpin-analyzer
+pip install -r requirements.txt
+streamlit run app.py
+```
 
 # Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 # Run Streamlit app
+```bash
 streamlit run app.py
 App will be available at: http://localhost:8501
+```
 
 🔹 Deploy on Render (current live deployment)
 Create new Web Service → Connect GitHub repo
 
 Set Build Command:
-
-nginx
-Copy
-Edit
+```bash
 pip install -r requirements.txt
+```
 Set Start Command:
-
-nginx
-Copy
-Edit
+```bash
 streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
+```
 Deploy & open your live URL
 👉 Already live at: https://mpin-analyzer-3.onrender.com
 
-📸 Screenshots
-Input Screen	Analysis Result
-
-(Add your screenshots in an assets/ folder and update links above)
 
 🧪 Tests
 Run test suite:
-
-nginx
-Copy
-Edit
+```bash
 pytest tests/
+```
+
 🙌 Credits
 Built with ❤️ using Python + Streamlit
 
-Assignment inspired by OneBanc Technologies
-
-📜 License
-This project is licensed under the MIT License.
-
-yaml
-Copy
-Edit
 
 ---
 
