@@ -14,7 +14,7 @@ It checks whether a PIN is:
 
 If the PIN is **weak**, the app also explains **why**.
 
-This project was built as part of the **MPIN Assignment** and deployed with **Streamlit** on **Render**.
+
 
 ---
 
