@@ -1,7 +1,7 @@
 # 🔐 MPIN Strength Analyzer
 
 [![Streamlit App](https://img.shields.io/badge/🚀%20Live%20Demo-Streamlit-brightgreen?logo=streamlit)](https://mpin-analyzer-3.onrender.com)  
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rimi-majumdar/mpin-analyzer/blob/main/MPIN_Task.ipynb)  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1m7Obfr-aoo2iviiATQgwAUOVmsjHJNi0?usp=sharing)   
 *(Click the badge to try the live app or open the notebook in Colab!)*
 
 ---
