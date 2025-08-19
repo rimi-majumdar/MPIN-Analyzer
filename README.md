@@ -1,7 +1,7 @@
 # 🔐 MPIN Strength Analyzer
 
 [![Streamlit App](https://img.shields.io/badge/🚀%20Live%20Demo-Streamlit-brightgreen?logo=streamlit)](https://mpin-analyzer-3.onrender.com)  
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-username>/mpin-analyzer/blob/main/MPIN_Task.ipynb)  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rimi-majumdar/mpin-analyzer/blob/main/MPIN_Task.ipynb)  
 *(Click the badge to try the live app or open the notebook in Colab!)*
 
 ---
@@ -24,16 +24,16 @@ This project was built as part of the **MPIN Assignment** and deployed with **St
 ---
 
 ## ⚡ Features
-- 🔢 **Supports 4-digit and 6-digit PINs**  
-- 📅 **Detects weak MPINs based on demographic patterns**  
-- 🚫 **Flags commonly used PINs**  
-- 🧾 **Provides reasons for weakness**  
+- 🔢 Supports 4-digit and 6-digit PINs  
+- 📅 Detects weak MPINs based on demographic patterns  
+- 🚫 Flags commonly used PINs  
+- 🧾 Provides reasons for weakness  
   - `COMMONLY_USED`  
   - `DEMOGRAPHIC_DOB_SELF`  
   - `DEMOGRAPHIC_DOB_SPOUSE`  
   - `DEMOGRAPHIC_ANNIVERSARY`  
-- 🎨 **Simple, user-friendly frontend with Streamlit**  
-- 🧪 **20+ automated test cases** included  
+- 🎨 Simple, user-friendly frontend with Streamlit  
+- 🧪 20+ automated test cases included  
 
 ---
 
@@ -51,10 +51,13 @@ flowchart TD
     D --> H[Strength = WEAK]
     F --> H
     G --> I[Strength = STRONG]
-📂 Project Structure
-bash
-Copy
-Edit
+```
+
+---
+
+## 📂 Project Structure
+
+```
 mpin-analyzer/
 ├── app.py               # Streamlit frontend
 ├── mpin_analyzer.py     # Core logic
@@ -67,55 +70,56 @@ mpin-analyzer/
 └── README.md
 ```
 
-🚀 Getting Started
-🔹 Run Locally
-## How to Run Locally
+---
+
+## 🚀 Getting Started
+
+### 🔹 Run Locally
 
 ```bash
-git clone https://github.com/<your-username>/mpin-analyzer.git
+# Clone repository
+git clone https://github.com/rimi-majumdar/mpin-analyzer.git
 cd mpin-analyzer
-pip install -r requirements.txt
-streamlit run app.py
-```
 
 # Install dependencies
-```bash
 pip install -r requirements.txt
-```
 
 # Run Streamlit app
-```bash
 streamlit run app.py
-App will be available at: http://localhost:8501
 ```
 
-🔹 Deploy on Render (current live deployment)
-Create new Web Service → Connect GitHub repo
+App will be available at: [http://localhost:8501](http://localhost:8501)
 
-Set Build Command:
-```bash
-pip install -r requirements.txt
-```
-Set Start Command:
-```bash
-streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
-```
-Deploy & open your live URL
-👉 Already live at: https://mpin-analyzer-3.onrender.com
+---
 
+### 🔹 Deploy on Render (current live deployment)
 
-🧪 Tests
-Run test suite:
+1. Create new Web Service → Connect GitHub repo  
+2. Set **Build Command**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Set **Start Command**:
+   ```bash
+   streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
+   ```
+4. Deploy & open your live URL  
+
+👉 Already live at: [https://mpin-analyzer-3.onrender.com](https://mpin-analyzer-3.onrender.com)
+
+---
+
+## 🧪 Tests
+
 ```bash
 pytest tests/
 ```
 
-🙌 Credits
-Built with ❤️ using Python + Streamlit
+---
 
+## 🙌 Credits
+Built with ❤️ using **Python + Streamlit**  
+Assignment inspired by **OneBanc Technologies**
 
 ---
 
-✅ Now this is **one single block of markdown** — copy once, paste once, done.  
-
-Do you also want me to prepare a **ready-to-download `README.md` file** so you don’t even
