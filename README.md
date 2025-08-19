@@ -119,7 +119,7 @@ pytest tests/
 
 ## 🙌 Credits
 Built with ❤️ using **Python + Streamlit**  
-Assignment inspired by **OneBanc Technologies**
+
 
 ---
 
